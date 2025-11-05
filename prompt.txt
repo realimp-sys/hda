@@ -1,0 +1,82 @@
+
+Experiment 1 — Clean, Integrate, and Transform EHR Data
+
+Prompt:
+
+Write a complete Python program in Jupyter Notebook to clean, integrate, and transform an Electronic Healthcare Record (EHR) dataset.
+Steps: load the dataset from a CSV path (ask me for file path), replace missing or zero values with mean, integrate multiple CSVs if provided, normalize/standardize numeric columns, encode categorical features if any, and show before/after summaries. Include all preprocessing visual checks and print statements. Use pandas, numpy, and scikit-learn.
+
+Experiment 2 — Data Analysis & Visualization on EHR
+
+Prompt:
+
+Generate Python code in Jupyter Notebook for exploratory data analysis and visualization on an EHR dataset.
+Load CSV (ask for path), display descriptive statistics, correlation heatmap, histogram for ‘Glucose’, boxplot for ‘BMI’, scatter plot (Glucose vs BMI by Outcome), and a count plot for Outcome distribution.
+Use pandas, seaborn, matplotlib. Each plot should have clear titles.
+
+Experiment 3 — Pre-processing Biomedical Images
+
+Prompt:
+
+Write a Python notebook script for biomedical image preprocessing using OpenCV and matplotlib.
+Ask me for image file path. Perform: (1) read and display original image, (2) resize and normalize, (3) denoise using Gaussian & Median filters, (4) histogram equalization for contrast, (5) edge detection using Canny.
+Show comparison plots at each stage. Use cv2 and matplotlib.
+
+Experiment 4 — Image Segmentation & Analytics
+
+Prompt:
+
+Create a Python Jupyter Notebook for biomedical image segmentation and analysis using OpenCV.
+Ask me for image file path. Steps: convert to grayscale, apply adaptive thresholding, perform morphological closing/opening, detect contours, count and display segmented regions, compute infection area percentage (white pixel ratio).
+Display each step visually.
+
+Experiment 5 — Named Entity Recognition (NER) in Clinical Text
+
+Prompt:
+
+Generate Python code using the scispaCy library for performing Named Entity Recognition (NER) on clinical text.
+Ask me for input text (or text file). Use model "en_ner_bc5cdr_md" to identify diseases, chemicals, and symptoms.
+Print detected entities with labels and visualize them using displacy.render() for Jupyter output.
+
+Experiment 6 — Sentiment Analysis of Clinical Notes
+
+Prompt:
+
+Write a Python notebook using NLTK’s SentimentIntensityAnalyzer (VADER) to perform sentiment analysis on a list of clinical notes (ask me to input notes).
+Compute sentiment polarity scores, classify each as Positive/Negative/Neutral, and visualize results with a bar chart using matplotlib. Include printed sentiment results for each note.
+
+Experiment 7 — Risk Factor Analysis Using Machine Learning
+
+Prompt:
+
+Write a full Python notebook for healthcare risk factor analysis using Logistic Regression and Random Forest.
+Ask me for CSV path. Steps: clean dataset (replace 0 with NaN → fill mean), scale data, train/test split, fit both models, print accuracies and classification reports, show feature importance bar plot and correlation heatmap.
+Use pandas, sklearn, seaborn, matplotlib.
+
+Experiment 8 — Diagnose Disease Risk from Patient Data
+
+Prompt:
+
+Generate a Python notebook that loads patient health data (ask for CSV path) and predicts disease risk using Decision Tree and SVM classifiers.
+Steps: clean and scale data, split train/test, train both models, display confusion matrices, visualize the decision tree, and predict outcome for a new patient input array.
+Use pandas, sklearn, matplotlib, seaborn.
+
+Experiment 9 — Disease Risk Diagnosis using Reinforcement Learning
+
+Prompt:
+
+Create a Python notebook simulating disease diagnosis using Reinforcement Learning (Q-Learning).
+Define states (symptom levels) and actions (diagnostic decisions), initialize a Q-table, run training episodes, update Q-values using the Bellman equation, print learned Q-table, derive optimal policy, and simulate diagnosis for few symptom levels.
+Use numpy, pandas (for tabular output), and random.
+
+🧪 Experiment 10 – Social Media Analytics for Outbreak Prediction
+
+“Write Python (Jupyter) code that asks for a CSV or sample text list of social-media posts and locations, cleans text, computes sentiment polarity, flags negative tones as risk, adds keyword counts (e.g., fever, flu, cough), trains Logistic Regression to predict outbreak risk, plots risk by location, and ends with short ‘WORKING’ & ‘REQUIRED INPUTS’ comments.”
+
+🧪 Experiment 11 – Drug Review Analytics from Social Media
+
+“Generate Python (Jupyter) code that takes a CSV or list of drug reviews + drug names, cleans text, performs sentiment analysis with TextBlob, visualizes sentiment distribution & word clouds, builds a simple Logistic Regression model using sentiment + keyword features, shows accuracy + drug-wise summary, and appends brief working & inputs comment.”
+
+🧪 Experiment 12 – Visual Analytics for Healthcare Data
+
+“Create Python (Jupyter) code that loads any healthcare CSV, asks me for numeric columns and target column, then plots histogram, boxplot, correlation heatmap, pairplot, and bar chart (summary by target), uses matplotlib + seaborn, and concludes with concise ‘WORKING’ and ‘REQUIRED INPUTS’ comments.”
